@@ -16,8 +16,8 @@
     "phpunit/phpunit": "3.7.*@stable"
   },
   "autoload": {
-    "psr-0": {
-      "SdSmith1981\\Youtube\\": "src/"
+    "psr-4": {
+      "SdSmith1981\\Youtube\\": "src"
     }
   },
   "minimum-stability": "dev"
