@@ -11,19 +11,19 @@ You need to create an application and create your access token in the [developer
 
 Run in console below command to download package to your project:
 ```
-composer require alaouy/youtube --prefer-dist dev-master
+composer require sdsmith1981/youtube --prefer-dist dev-master
 ```
 
 ## Configuration
 ### For Laravel 5
 In `/config/app.php` add YoutubeServiceProvider:
 ```
-Alaouy\Youtube\YoutubeServiceProvider::class,
+SdSmith1981\Youtube\YoutubeServiceProvider::class,
 ```
 
 Do not forget to add also Youtube facade there:
 ```
-'Youtube' => Alaouy\Youtube\Facades\Youtube::class,
+'Youtube' => SdSmith1981\Youtube\Facades\Youtube::class,
 ```
 
 Publish config settings:
@@ -37,32 +37,10 @@ Set your Youtube API key in the file:
 /config/youtube.php
 ```
 
-### For Laravel 4
-In `/app/config/app.php` add YoutubeServiceProvider:
-```
-'Alaouy\Youtube\YoutubeServiceProvider',
-```
-
-Do not forget to add also Youtube facade there:
-```
-'Youtube' => 'Alaouy\Youtube\Facades\Youtube',
-```
-
-Publish config settings:
-```
-php artisan config:publish alaouy/youtube
-```
-
-Set your Youtube API key in the file:
-
-```
-/app/config/packages/alaouy/youtube/config.php
-```
-
 ## Usage
 
 ```php
-// use Alaouy\Youtube\Facades\Youtube;
+// use SdSmith1981\Youtube\Facades\Youtube;
 
 // Return an STD PHP object
 $video = Youtube::getVideoInfo('rie-hPVJ7Sw');
@@ -203,4 +181,4 @@ Please read the ["Reference" section](https://developers.google.com/youtube/v3/d
 
 
 ## Credits
-Built on code from Madcoda's [php-youtube-api](https://github.com/madcoda/php-youtube-api).
+Built on code from Madcoda's [php-youtube-api](https://github.com/madcoda/php-youtube-api) and Alaouy's (https://github.com/alaouy/Youtube)
